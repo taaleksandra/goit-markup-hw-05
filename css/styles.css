@@ -93,10 +93,16 @@ body {
 .main-navigation a:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-navigation a:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer styles */
@@ -135,9 +141,15 @@ body {
 }
 .address-link:hover {
   color: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:focus {
   color: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-icons {
   list-style: none;
@@ -168,10 +180,16 @@ body {
 .footer-socials-icons li:active {
   cursor: pointer;
   background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-icons li:focus,
 .footer-socials-icons li:active {
   background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* main-page main styles */
@@ -205,6 +223,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
   padding: 10px 42px;
@@ -267,6 +286,7 @@ body {
   width: 100%;
   position: absolute;
   top: 224px;
+  z-index: 1;
 }
 .container-main-third-background p {
   font-weight: 700;
@@ -307,11 +327,17 @@ body {
   background-color: var(--accent-color);
   fill: hsla(0, 0%, 100%, 1);
   cursor: pointer;
+  transition-property: background-color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-team-icons li:focus,
 .container-team-icons li:active {
   background-color: var(--accent-color);
   fill: hsla(0, 0%, 100%, 1);
+  transition-property: background-color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-team-worker {
   background-color: var(--white-color);
@@ -361,11 +387,17 @@ body {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
+  transition-property: fill border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-clients-list li:focus,
 .container-clients-list li:active {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
+  transition-property: fill border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio-page styles */
@@ -392,11 +424,17 @@ body {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: background-color color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtr-buttons-portfolio button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  transition-property: background-color color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list {
   list-style: none;
@@ -412,6 +450,9 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list figcaption {
   border-bottom: 1px solid #eeeeee;
