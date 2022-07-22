@@ -259,6 +259,26 @@ body {
   vertical-align: top;
   padding-bottom: 50px;
 }
+.container-main-third li {
+  position: relative;
+}
+.container-main-third-background {
+  background-color: #2f303acc;
+  width: 100%;
+  position: absolute;
+  top: 224px;
+}
+.container-main-third-background p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1721;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
 .container-team {
   background-color: var(--background-light-color);
 }
