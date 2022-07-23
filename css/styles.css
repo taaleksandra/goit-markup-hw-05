@@ -509,8 +509,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform: scaleY(1); */
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
   width: 528px;
@@ -535,9 +534,8 @@ body {
   cursor: pointer;
 }
 .is-hidden {
-  /* visibility: hidden; */
+  visibility: hidden;
   transform: scaleX(0);
   opacity: 0;
-  pointer-events: none;  
-  transition: transform 250ms linear, opacity 250ms linear;
+  pointer-events: none;
 }
