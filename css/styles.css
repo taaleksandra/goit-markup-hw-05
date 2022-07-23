@@ -499,8 +499,6 @@ body {
 
 /* modal styles */
 .backdrop {
-  /* cursor: not-allowed; */
-  /* display: flex; */
   background-color: hsla(0, 0%, 0%, 0.1);
   position: fixed;
   top: 0;
@@ -508,27 +506,46 @@ body {
   bottom: 0;
   right: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
 }
 .modal {
   width: 528px;
   height: 581px;
-  margin: 221px auto 0;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 8px;
+  animation: animateModal 2500ms forwards;
 }
 .close-btn {
   background-color: hsla(0, 0%, 100%, 1);
-  background-image: url("images/close-black-18.svg");
+  background-image: url("images/close-black-18dp.png");
   border: 1px solid hsla(0, 0%, 0%, 0.1);
   border-radius: 50%;
   width: 30px;
   height: 30px;
   display: block;
   margin-left: auto;
+
 }
 .close-btn:hover {
   cursor: pointer;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes animateModal {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
